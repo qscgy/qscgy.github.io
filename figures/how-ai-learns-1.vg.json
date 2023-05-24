@@ -1,0 +1,176 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "background": "white",
+    "padding": 5,
+    "width": 300,
+    "height": 300,
+    "style": "cell",
+    "data": [
+      {
+        "name": "data-a2498d2847a5d31d00705f3ec9096fd9",
+        "values": [
+          {"x": 0, "y": 20.111556082434376},
+          {"x": 1, "y": 33.26844328550903},
+          {"x": 2, "y": 21.89351202559222},
+          {"x": 3, "y": 16.101295270611445},
+          {"x": 4, "y": 27.83388124973369},
+          {"x": 5, "y": 17.474428454696092},
+          {"x": 6, "y": 56.89083955180798},
+          {"x": 7, "y": 54.266236581959156},
+          {"x": 8, "y": 40.47201468509357},
+          {"x": 9, "y": 57.33860614046323},
+          {"x": 10, "y": 70.22812170957918},
+          {"x": 11, "y": 70.49029936585187},
+          {"x": 12, "y": 64.26582210407611},
+          {"x": 13, "y": 73.7424407969496},
+          {"x": 14, "y": 80.63699324281966},
+          {"x": 15, "y": 78.09564498306382},
+          {"x": 16, "y": 96.0041427637889},
+          {"x": 17, "y": 95.00591345289745},
+          {"x": 18, "y": 97.30446057889537},
+          {"x": 19, "y": 114.47458794169019}
+        ]
+      },
+      {"name": "empty", "values": [{}]},
+      {
+        "name": "data_0",
+        "source": "data-a2498d2847a5d31d00705f3ec9096fd9",
+        "transform": [
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"x\"]) && isFinite(+datum[\"x\"]) && isValid(datum[\"y\"]) && isFinite(+datum[\"y\"])"
+          }
+        ]
+      },
+      {
+        "name": "data_1",
+        "source": "empty",
+        "transform": [
+          {"type": "formula", "expr": "b", "as": "y"},
+          {"type": "formula", "expr": "20*m+b", "as": "y2"},
+          {
+            "type": "filter",
+            "expr": "isValid(datum[\"y\"]) && isFinite(+datum[\"y\"])"
+          }
+        ]
+      }
+    ],
+    "signals": [
+      {
+        "name": "m",
+        "value": 1,
+        "bind": {"input": "range", "max": 15, "min": 0, "name": "Slope: "}
+      },
+      {
+        "name": "b",
+        "value": 0,
+        "bind": {"input": "range", "max": 115, "min": -10, "name": "Intercept: "}
+      }
+    ],
+    "marks": [
+      {
+        "name": "layer_0_marks",
+        "type": "symbol",
+        "style": ["point"],
+        "from": {"data": "data_0"},
+        "encode": {
+          "update": {
+            "opacity": {"value": 0.7},
+            "fill": {"value": "transparent"},
+            "stroke": {"value": "#4c78a8"},
+            "ariaRoleDescription": {"value": "point"},
+            "description": {
+              "signal": "\"Time: \" + (format(datum[\"x\"], \"\")) + \"; Value: \" + (format(datum[\"y\"], \"\"))"
+            },
+            "x": {"scale": "x", "field": "x"},
+            "y": {"scale": "y", "field": "y"}
+          }
+        }
+      },
+      {
+        "name": "layer_1_marks",
+        "type": "rule",
+        "style": ["rule"],
+        "from": {"data": "data_1"},
+        "encode": {
+          "update": {
+            "stroke": {"value": "black"},
+            "description": {
+              "signal": "\"y: \" + (format(datum[\"y\"], \"\")) + \"; y2: \" + (format(datum[\"y2\"], \"\"))"
+            },
+            "x": {"scale": "x", "value": 0},
+            "x2": {"scale": "x", "value": 19},
+            "y": {"scale": "y", "field": "y"},
+            "y2": {"scale": "y", "field": "y2"}
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "name": "x",
+        "type": "linear",
+        "domain": {"fields": [{"data": "data_0", "field": "x"}, [0], [19]]},
+        "range": [0, {"signal": "width"}],
+        "nice": true,
+        "zero": true
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "domain": [0, 120],
+        "range": [{"signal": "height"}, 0],
+        "nice": true,
+        "zero": true
+      }
+    ],
+    "axes": [
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "gridScale": "y",
+        "grid": true,
+        "tickCount": {"signal": "ceil(width/40)"},
+        "domain": false,
+        "labels": false,
+        "aria": false,
+        "maxExtent": 0,
+        "minExtent": 0,
+        "ticks": false,
+        "zindex": 0
+      },
+      {
+        "scale": "y",
+        "orient": "left",
+        "gridScale": "x",
+        "grid": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "domain": false,
+        "labels": false,
+        "aria": false,
+        "maxExtent": 0,
+        "minExtent": 0,
+        "ticks": false,
+        "zindex": 0
+      },
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "grid": false,
+        "title": "Time",
+        "labelFlush": true,
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(width/40)"},
+        "zindex": 0
+      },
+      {
+        "scale": "y",
+        "orient": "left",
+        "grid": false,
+        "title": "Value",
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "zindex": 0
+      }
+    ]
+  }
