@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: ElasticSnake
 github_username: qscgy
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Sam Ehrenstein"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/1660880587031.jfif"
   bio    : "Ph.D. student in computer science at UNC-Chapel Hill. Interested in computer vision and machine learning."
   location: "Carrboro, NC"
   links:
