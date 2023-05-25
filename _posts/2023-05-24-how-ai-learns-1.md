@@ -1,11 +1,12 @@
 ---
 title: "How AI Learns, part 1"
-date: 2023-01-18T18:45:30-05:00
+date: 2023-05-25
 spec: "how-ai-learns-1"
 categories:
   - blog
 tags:
-  - update
+  - AI
+  - machine-learning
 ---
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({

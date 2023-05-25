@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Sam Ehrenstein"
   avatar : "/assets/images/1660880587031.jfif"
-  bio    : "Ph.D. student in computer science at UNC-Chapel Hill. Interested in computer vision and machine learning."
+  bio    : "Ph.D. candidate in computer science at UNC-Chapel Hill. Interested in applications of computer vision and machine learning, particularly in medicine."
   location: "Carrboro, NC"
   links:
     - label: "Twitter"

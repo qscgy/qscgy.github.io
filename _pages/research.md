@@ -2,8 +2,9 @@
 title: "Research"
 permalink: /research/
 ---
-## Ongoing Projects
-My research is focused on the use of computer vision, machine learning, and 3D reconstruction to improve the accuracy of colonoscopy for colorectal cancer screening. As part of this project, I am also conducting research into shape representations on curved manifolds.
+My current work with Prof. Stephen Pizer at UNC-Chapel Hill is focused on the use of computer vision, machine learning, and 3D reconstruction to improve the accuracy of colonoscopy. As part of this project, I am also conducting research into shape representations on curved manifolds.
+
+Previously, I worked with Prof. Mahdi Bayat at Case Western Reserve University, studying non-contrast ultrasound signal processing.
 
 ## Publications
 **S. Ehrenstein**, S. McGill, J. Rosenman, S. Pizer. *Scribble-Supervised Semantic Segmentation for Haustral Fold Detection*. Accepted as a lecture at [CARS 2023](https://www.cars-int.org/cars-2023/welcome-to-cars-2023/).
