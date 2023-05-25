@@ -7,7 +7,24 @@ categories:
 tags:
   - update
 ---
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\(","\\)"] ],
+    },
+    TeX: {
+      Macros: {
+        bra: ["\\langle{#1}|", 1],
+        ket: ["|{#1}\\rangle", 1],
+        braket: ["\\langle{#1}\\rangle", 1],
+        bk: ["\\langle{#1}|{#2}|{#3}\\rangle", 3]
+     }
+   }
+  });
+</script>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML' async></script>
 What does it mean to say that an AI “learned” to do something? Broadly speaking, it means using data to figure out the rules governing what an AI should do in a certain situation.
 
 AI, short for “artificial intelligence”, refers to computer programs which can perform tasks requiring some degree of abstract reasoning. This is a broad class of programs, ranging from simple game-playing algorithms to ChatGPT. The science of AI emerged in the 1950s, as theorists like Alan Turing tried to understand the relation between human problem-solving skills and computer logic. “Intelligence” is a hard concept to define, but one aspect of it is the ability to adapt to new situations. Until the 1980s, this was done by mathematically deriving general rules for finding the solution to a problem of a given format. For example, an AI to solve a Rubik’s cube considers the current arrangement of the cube and makes a move depending on pre-programmed rules that have been shown to be the best. The problem with this approach was that it did not work for more complex problems, like speech recognition. With the end of the Vietnam War in the early 1970s, funding for AI dried up, beginning the period known as the first AI winter. This ended in the early 1980s with the introduction of machine learning, and that’s where our story starts.
@@ -42,22 +59,23 @@ Let's look at an example. Suppose we have 500 data points, where each represents
 
 Male heights are known to follow a normal, or Gaussian, distribution. This is a function of $x$ that has two parameters, $\mu$ and $\sigma$, so we can write $p(x)$ as $p(x; \mu, \sigma)$ to specify this. We can also write $p(x) \sim \mathcal{N}(\mu, \sigma)$, meaning that $p(x)$ is specifically a normal distribution with these parameters.
 
-  <div id="heights-widget"></div>
+  <div id="heights"></div>
   
   <script>
-    const spec = "/figures/gaussian-heights.vg.json";
-  	vegaEmbed("#heights-widget", spec)
+    const spec2 = "/figures/gaussian-heights.vg.json";
+  	vegaEmbed("#heights", spec2)
     	// result.view provides access to the Vega View API
       .then(result => console.log(result))
       .catch(console.warn);
   </script>
 
 We can solve for 𝜇 and 𝜎 using known formulas, because they are the mean and standard deviation of the data respectively, but let’s think about what $p(x; \mu, \sigma)$ really means. It is a function telling us how likely it is to find a man with a height of $x$. We have already found 500 men with these heights; the probability that we observed what we did is 1. Instead, we need to find the 𝜇 and 𝜎 such that **we have the greatest likelihood of having found the data we did**. The likelihood of finding a _given_ $x$ is $p(x)$ and because nobody's height depends on anyone else's[^2], the probability . The total **data likelihood** is the product of all $p(x_i)$, thus $$p(\text{data}; \mu, \sigma)= p(x_1)*p(x_2)*p(x_3)*...*p(x_{500})$$
- 𝜇, 𝜎 are also parameters of each $p(x_i)$, but I've omitted them for clarity. Try adjusting the parameters in the widget above to see how the data likelihood changes
 
-It turns out that random fluctuations in almost anything follow a normal distribution, so much so that linear regression is based on the assumption that $y=mx+b+\varepsilon$, where $ε$ follows a normal distribution with 𝜇=0. In words, this means that we assume that every observed value of $y$ is a model term, $mx+b$, plus an variation ("noise") term, $\varepsilon$. This is important because it means we can write a probability distribution! Instead of just p(x), we actually want $p(y|x)$, which is the likelihood of measuring $y$ as the position at time $x$. This is called a **conditional likelihood**, and we will use them later to understand ChatGPT. But all it is is a probability distribution $p(y)$ that has 𝜇, 𝜎, <u>and $\underline{x}$</u> as parameters.
+𝜇, 𝜎 are also parameters of each $p(x_i)$, but I've omitted them for clarity. Try adjusting the parameters in the widget above to see how the data likelihood changes.
 
-For our line of best fit, we can use the fact that adding a number to a normally-distributed variable adds it to the mean in order to write $p(y|x) \sim \mathcal{N}(\mu=mx+b,\sigma)$.
+It turns out that random fluctuations in almost anything follow a normal distribution, so much so that linear regression is based on the assumption that $y=mx+b+\varepsilon$, where $ε$ follows a normal distribution with 𝜇=0. In words, this means that we assume that every observed value of $y$ is a model term, $mx+b$, plus an variation ("noise") term, $\varepsilon$. This is important because it means we can write a probability distribution! Instead of just p(x), we actually want $p(y\|x)$, which is the likelihood of measuring $y$ as the position at time $x$. This is called a **conditional likelihood**, and we will use them later to understand ChatGPT. But all it is is a probability distribution $p(y)$ that has 𝜇, 𝜎, <u>and $\underline{x}$</u> as parameters.
+
+For our line of best fit, we can use the fact that adding a number to a normally-distributed variable adds it to the mean in order to write $p(y\|x) \sim \mathcal{N}(\mu=mx+b,\sigma)$.
 This tells us something very important: for any given value of $x,$ if we repeated this experiment many times, the measured values of $y$ would follow this normal distribution. Essentially, we are solving the same problem as with mens’ heights _for every single_ $x$. That sounds hard, but we already know how to write down the total likelihood of the data, and we have a formula for the likelihood of each data point. We write: $$p(y|x)=p(y_1;mx_1+b,\sigma)*p(y_2;mx_2+b,\sigma)*...*p(y_{500};mx_{500}+b,\sigma)$$
 And now it’s the same problem as before; we just have to find the parameters ($m,b,\sigma$) that maximize this likelihood. It turns out that the optimal 𝜎 is a function of $m$ and $b$, so we just need to find $m$ and $b$. These turn out to be the same values we got from minimizing the mean squared error before. In machine learning, it is usually the case that the math is based on maximizing a data likelihood, but it is actually implemented in code as minimizing some error function that we can show maximizes the data likelihood[^3]. 
 
@@ -72,4 +90,4 @@ That’s all for part 1. In part 2, I will get more into the kinds of functions 
 	Except for close ancestors, but there's a negligible chance that any are in a random sample of a large population.
 
 [^3]:
-	In this case, the reason is that the mean squared error is equal to $\frac{1}{n}$ times the logarithm of $p(y|x)$, and because $a > b$ always means $\log a > \log b$, they are minimized by the same values. We almost always work with log-probabilites because working with 1E-3542 or whatever is not computationally reasonable.
+	In this case, the reason is that the mean squared error is equal to $\frac{1}{n}$ times the logarithm of $p(y\|x)$, and because $a > b$ always means $\log a > \log b$, they are minimized by the same values. We almost always work with log-probabilites because working with 1E-3542 or whatever is not computationally reasonable.
