@@ -5,11 +5,11 @@ main:
   #   url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  # - title: "CV"
-  #   url: /cv/
+  - title: "CV"
+    url: /cv/
   - title: "Research"
     url: /research/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Posts"
-    url: /posts/
+  # - title: "Portfolio"
+  #   url: /portfolio/
+  # - title: "Posts"
+  #   url: /posts/
