@@ -2,7 +2,7 @@
 title: "Research"
 permalink: /research/
 ---
-My current work with Prof. Stephen Pizer at UNC-Chapel Hill is focused on the use of computer vision, machine learning, and 3D reconstruction to improve the accuracy of colonoscopy. As part of this project, I am also conducting research into shape representations on curved manifolds.
+My current work with Prof. Stephen Pizer at UNC-Chapel Hill is focused on the use of computer vision, machine learning, and 3D reconstruction to improve the accuracy of colonoscopy. As part of this project, I am also conducting research into shape representations on curved surfaces.
 
 Previously, I worked with Prof. Mahdi Bayat at Case Western Reserve University, studying non-contrast ultrasound signal processing.
 
