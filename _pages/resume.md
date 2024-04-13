@@ -31,7 +31,7 @@ Specialization: Internet of Things + Medical Image Synthesis
 University of North Carolina at Chapel Hill, Chapel Hill, NC<br>Aug 2021 - Present
 
 - Worked with coauthors to design and implement a novel method of
-monocular depth estimation for endoscopy. Demonstrated competitive or superior performance to the state-of-the-art method on a number of
+monocular depth estimation for the challenging, irregular domain of medical endoscopy. Demonstrated competitive or superior performance to the state-of-the-art method on a number of
 metrics.
 
 - Proposed and implemented a novel algorithm for estimating the position
@@ -168,6 +168,3 @@ domains, including faces, dogs, and Pokémon.
 dept. Graduate Curriculum Committee, 2024-present
 - Reviewer, Int.J. Computer-Aided
 Radiology and Surgery (2023)
-
-## Certifications
-- General-class FCC amateur radio license. Call sign: KO4VPD
