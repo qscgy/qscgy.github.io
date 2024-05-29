@@ -15,7 +15,7 @@ Aug 2021 - Present
 Advisor: Stephen M. Pizer
 
 ### M.S. in Computer Science
-University of North Carolina at Chapel Hill, Chapel Hill, NC<br> Aug 2021 - May 2023
+University of North Carolina at Chapel Hill, Chapel Hill, NC<br>Aug 2021 - May 2023
 
 Advisor: Stephen M. Pizer
 
@@ -35,7 +35,7 @@ monocular depth estimation for the challenging, irregular domain of medical endo
 metrics.
 
 - Proposed and implemented a novel algorithm for estimating the position
-and area of occluded surface in colonoscopy.
+and area of occluded surfaces in colonoscopy.
 
 - Developed image-processing methods to perform weakly-supervised semantic
 segmentation of geometric features of the colon surface, outperforming
@@ -158,10 +158,11 @@ domains, including faces, dogs, and Pokémon.
 - UNC-CH Computer Science Student Association President, Fall
 2023 - Present
 - UNC-CH Computer Science Student Association Officer, Fall
-2022 - Fall 2023
+2022 - present
 - UNC CS Fellowship Panel Organizer, Fall 2022 and Fall
 2023 
 - Decoding Graduate Programs in CS Panel Member, Fall 2023 
+
 ## Academic Service
 - Student representative, UNC CS Dept. Faculty
 - Member, UNC CS.
