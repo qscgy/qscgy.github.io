@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Other Projects"
 permalink: /projects/
 ---
 ## Fractal generator
@@ -13,7 +13,9 @@ _April 2024-present_
   <img src="/assets/images/multijulia_magma2_o4_-0.5+0.45i_-1.5_-1.5_res300.png"></a>
   <!-- <figcaption></figcaption> -->
 </figure>
-I've been fascinated by fractals since high school, when I learned how to use JavaFX by generating them. I decided to write a fractal generator in C++ this time, in order to improve my skills with the languange and with OpenCV for C++. As of now, the user can generate Mandelbrot, Julia, or burning ship fractals and zoom in on parts of them by clicking at the corners of a bounding box. The code can be found [here](https://github.com/qscgy/fractals-redux/).
+I've been fascinated by fractals since 10th grade, when I learned how to use Java by generating them. I decided to write a fractal generator in C++ this time, in order to improve my skills with the languange and with OpenCV for C++. As of now, the user can generate Mandelbrot, Julia, or burning ship fractals and zoom in on parts of them by clicking at the corners of a bounding box. As part of this project, I wrote a lightweight library for color-mapping scalar values to a color scale.
+
+The code can be found [here](https://github.com/qscgy/fractals-redux/).
 
 ## 3D Printed Topographic Map of Contiguous US
 _March-October 2021_
