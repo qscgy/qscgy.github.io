@@ -2,7 +2,6 @@
 title: Curriculum Vitae
 permalink: /cv/
 ---
-
 ## Interests
 AI + Health, Medical Imaging, 3D Computer Vision, Computational
 Geometry, Machine Learning, Neural Rendering, Generative Models
@@ -109,17 +108,6 @@ Chapel Hill, NC 2023-present
 - Created various visualizations of data for my own curiosity. Most use
 Altair, but some are with D3.js. Subjects include voting patterns, origins of the names of states, and US
 public universities.
-
-### COMP 790 - Shape Representation and Statistics Project 
-**S-reps in Curved Space for Frame-to-Frame Alignment**<br>Chapel
-Hill, NC Spring 2023
-
-- Proposed and implemented a novel algorithm for constructing skeletal
-representations (S-reps) of shapes defined on curved surfaces, i.e. 2D
-manifolds embedded in 3D space.
-
-- Demonstrated the potential of this method for downstream tasks,
-including frame-to-frame camera pose estimation.
 
 ### COMP 790 - Neural Rendering Project
 In collaboration with: Nurislam
