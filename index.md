@@ -14,7 +14,7 @@ Away from academics, you can find me hiking in the forest somewhere, tinkering w
 <div class="paper-description">
 <b>Leveraging Near-Field Lighting for Monocular Depth Estimation from Endoscopy Videos</b><br/>
 Akshay Paruchuri, <b>Samuel Ehrenstein</b>, Sherry Wang, Inbar Fried, Stephen M. Pizer, Marc Niethammer, Roni Sengupta<br/>
-<b>arXiv 2024</b><br/>
+<b>Accepted to European Conference on Computer Vision, 2024.</b><br/>
 [<a href="https://arxiv.org/pdf/2403.17915.pdf">PDF</a>][<a href="https://ppsnet.github.io/">Project Page</a>][<a href="https://github.com/Roni-Lab/PPSNet">Code</a>]
 <p>
 <i>We utilize Per-Pixel Shading (PPS) to model light reflected from surfaces in endoscopy. Using novel PPS-based, self-supervised loss functions in a teacher-student approach, and building on a pretrained DPT-Hybrid ViT model, we achieve state-of-the-art results on a variety of simulated and in-vivo clinical datasets.</i>
@@ -29,6 +29,7 @@ Akshay Paruchuri, <b>Samuel Ehrenstein</b>, Sherry Wang, Inbar Fried, Stephen M.
 <b>Samuel Ehrenstein</b>, Sarah McGill, Julian Rosenman, Stephen M. Pizer <br/>
 <b><a href="https://www.cars-int.org/cars-2023/welcome-to-cars-2023/">CARS 2023</a></b><br/>
 [<a href="http://midag.cs.unc.edu/pubs/papers/fold_paper_revised_3.pdf">PDF</a>]
+[<a href="https://github.com/qscgy/ridge-detector">Code</a>]
 <p><i>
 We employ a partial labeling technique known as scribble supervision in order to detect haustral folds in the colon during colonoscopy. In scribble supervison, only the most salient pixels of an image are labeled, enabling us to efficienty train a per-pixel semantic segmentation model on a large set of entirely in-vivo images. We ultimately achieve state-of-the-art accuracy and speed.
 </i></p>
@@ -42,6 +43,7 @@ We employ a partial labeling technique known as scribble supervision in order to
 Yubo Zhang, Jan-Michael Frahm, <b>Samuel Ehrenstein</b>, Sarah K. McGill, Julian G. Rosenman, Sherry Wang, Stephen M. Pizer<br>
 <b>arXiv 2021</b><br>
 [<a href="https://arxiv.org/pdf/2111.10371.pdf">PDF</a>]
+[<a href="https://github.com/zhangybzbo/ColonHoleDetect">Public code</a>]
 <p><i>
 In order to address the lack of large amounts of high-quality clinical colonoscopy data with known ground-truth camera poses or pixel depths, we train a convolutional network to predict depth and pose jointly using novel self-supervised losses. This is immediately useful in improving the quality of SLAM reconstructions of the colon surface from colonoscopy video.
 </i></p>
