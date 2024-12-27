@@ -29,27 +29,24 @@ Specialization: Internet of Things + Medical Image Synthesis
 (Advisor: Stephen M. Pizer)<br>
 University of North Carolina at Chapel Hill, Chapel Hill, NC<br>Aug 2021 - Present
 
-- Worked with coauthors to design and implement a novel method of
-monocular depth estimation for the challenging, irregular domain of medical endoscopy. Demonstrated competitive or superior performance to the state-of-the-art method on a number of
-metrics.
-
-- Proposed and implemented a novel algorithm for estimating the position
-and area of occluded surfaces in colonoscopy.
-
-- Developed image-processing methods to perform weakly-supervised semantic
-segmentation of geometric features of the colon surface, outperforming
-the state of the art by 30 percentage points on overall accuracy.
+- Developed a novel approach to the problem of visual navigation in endoscopy in order to enable an endoscopist to navigate the tip of the
+endoscope to within 3 cm of a designated point.
+- Collaborated with a team to devise and implement a novel method of monocular video depth estimation in the irregular domain of medical
+endoscopy, achieving competitive or superior performance against existing methods.
+- Developed a trainable image‑processing pipeline to detect texture‑invariant geometric features in endoscopic video, outperforming the state
+of the art by 30 percentage points on overall accuracy. Optimized this approach to be able to process 110 frames per second.
+- Used Qt and VTK to further develop an bespoke, interactive post‑processing tool for SLAM algorithms.
+- Performed extensive testing and debugging on a shared codebase.
 
 ### Undergraduate Research Assistant<br>
 (Advisor: Mahdi Bayat)<br>Case Western
 Reserve University, Cleveland, OH<br> Apr 2020 - Aug 2021
 
-- Developed a novel method, employing deep learning and numerical image
-processing, for producing images of blood vessels under 1mm diameter
-from ultrasound scans without contrast agents.
-
-- Demonstrated the competitive performance of a novel method for fast
-low-rank approximation of spatiotemporal data.
+- Developed a novel method, employing deep learning and numerical image processing, to produce images of blood vessels under 1 mm diameter
+from ultrasound scans without the need for injected contrast agents.
+- Introduced a novel method for fast low‑rank approximation of spatiotemporal data in applications where speed is prioritized over accuracy.
+Demonstrated superior performance to comparable, previously‑published methods.
+- Used MATLAB to implement a blood‑vessel simulator to simulate ultrasound scans of a shear‑thinning fluid flowing through winding, narrow blood vessels.
 
 ### REU Research Assistant<br>(Advisors: Ryan Kastner and Curt Schurgers)
 University of California San Diego, La Jolla, CA<br>June 2019 - Aug 2019
@@ -106,24 +103,8 @@ Shape Representation and Statistics, Vision Transformers
 Chapel Hill, NC 2023-present
 
 - Created various visualizations of data for my own curiosity. Most use
-Altair, but some are with D3.js. Subjects include voting patterns, origins of the names of states, and US
-public universities.
-
-### COMP 790 - Neural Rendering Project
-In collaboration with: Nurislam
-Tursynbek
-
-**URAGAN: Medical Image Registration
-With StyleGAN 2**<br>Chapel Hill, NC Fall 2022
-
-- Trained StyleGAN 2, along with latent-space encoders, to learn a latent
-space in which the function warping one image to another is linear. When
-decoded, this provides a warping function for even out-of-domain images.
-
-- Achieved comparable in-domain and out-of-domain results to
-state-of-the-art methods.
-
-- Code: <https://github.com/NurislamT/URAGAN>
+Altair, but some are with D3.js. Subjects include voting patterns, origins of the names of states, and US public universities.
+- Code and plots: [https://github.com/qscgy/visualizations](https://github.com/qscgy/visualizations)
 
 ### COMP 755 - Machine Learning Project
 In collaboration with: Mahathir
@@ -144,7 +125,7 @@ domains, including faces, dogs, and Pokémon.
 
 ## Outreach
 - UNC-CH Computer Science Student Association President, Fall
-2023 - Present
+2023 - Fall 2024
 - UNC-CH Computer Science Student Association Officer, Fall
 2022 - present
 - UNC CS Fellowship Panel Organizer, Fall 2022 and Fall
