@@ -5,3 +5,4 @@ Gemfile.lock
 .vscode
 vega
 vega/*
+.DS_Store/

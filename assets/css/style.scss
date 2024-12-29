@@ -1,3 +1,4 @@
+@import "main.scss";
 @page {
     margin: 10mm; /* Set to 10mm, but you can adjust as needed */
 }
@@ -31,7 +32,7 @@ margin-top: 0.25em;
 
 p, li {
 margin-top: 0;
-line-height: 1.25;
+line-height: 1.15;
 }
 /* Name */
 h1 {
