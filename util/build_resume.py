@@ -11,7 +11,7 @@ command = ['pandoc', input_file, '-o', output_file, '--pdf-engine', 'weasyprint'
             '--css', css_file]
 result = subprocess.run(command, capture_output=True, text=True)
 if result.returncode == 0:
-    print("Pandoc executed successfully")
+    print("Pandoc successfully compiled PDF")
 else:
     print(f"Pandoc failed with error: {result.stderr}")
     
@@ -19,7 +19,7 @@ command = ['pandoc', input_file, '-o', html_file, '-t', 'html5',
             '--css', css_file]
 result = subprocess.run(command, capture_output=True, text=True)
 if result.returncode == 0:
-    print("Pandoc executed successfully")
+    print("Pandoc successfully compiled HTML")
 else:
     print(f"Pandoc failed with error: {result.stderr}")
 
