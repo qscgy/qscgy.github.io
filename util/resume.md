@@ -25,7 +25,7 @@ Specialization: Internet of Things + Medical Image Synthesis
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
-- Developed a novel, primarily geometric approach to visual navigation in order to enable placement of an endoscope with an accuracy of 3 cm.
+- Developed a novel approach to visual navigation, combining deep learning and computational geometry, in order to enable placement of an endoscope with an accuracy of 3 cm.
 - Collaborated with a team to devise and implement a novel, Vision Transformer‑based method of monocular depth estimation in the irregular
 domain of medical endoscopy, achieving competitive or superior performance against existing methods.
 - Developed a trainable image‑processing pipeline to detect texture‑invariant geometric features in endoscopic video, outperforming the state
@@ -85,7 +85,7 @@ availabe to visualize surface properties important in differential geometry.
 60 people each, and one family‑friendly evening social for 100 people.
 - In spring 2024, held 150% more department social events than in any of the previous four semesters.
 - Advocated for the views and interests of students during the faculty hiring process as a voting member of the departmental faculty senate.
-- Successfully advocated to maintain a cost‑of‑living increase for graduate student stipends.
+- Successfully advocated for a cost‑of‑living increase to graduate student stipends.
 
 ## Publications & Patents
 Paruchuri, A., **Ehrenstein, S.**, Wang, S., Fried, I., Pizer, S.M.,

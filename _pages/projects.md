@@ -2,6 +2,7 @@
 title: "Other Projects"
 permalink: /projects/
 ---
+
 ## Shape Viewer
 _November 2024-present_
 <figure class="half">
@@ -34,3 +35,6 @@ The code can be found [here](https://github.com/qscgy/fractals-redux/).
 _March-October 2021_
 ![A 3D printed topographical map of the United States, in blue plastic.](/assets/images/IMG_4153.jpg)
 This took several months, printing each state individually with a lot of time spent dialing in print settings. Done in PLA with 0.2 mm layer height.
+
+## Open-Source Projects
+In addition to my own projects, I am also an open-source contributor to Pandas and in the top 0.25% of English Wikipedia editors ([user page](https://en.wikipedia.org/wiki/User:ElasticSnake)).
