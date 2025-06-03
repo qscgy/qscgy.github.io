@@ -31,6 +31,11 @@ permalink: /contractors/
     <script>
         const circleRadius = 30;
         const types = ['m', 'a', 's', 'so', 'nc'];
+        const typeNames = ["Merged Into",
+        "Acquired By",
+        "Sold To",
+        "Spun Off",
+        "Name Changed"];
         const color = d3.scaleOrdinal(types, d3.schemeCategory10);
 
         const data = {
@@ -311,12 +316,39 @@ permalink: /contractors/
             .text(d => d.id)
             .attr("x", 0)
             .attr("y", 3)
+            .attr("class", "wrapme")
             .attr("text-anchor", "middle");
 
         node.call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
             .on("end", dragended));
+
+
+    let pairs = [];
+    for (i=0; i<types.length; i++){
+        pairs.push({'type':types[i], 'typeName':typeNames[i]});
+    }
+        svg.selectAll("mydots")
+  .data(pairs)
+  .enter()
+  .append("circle")
+    .attr("cx", 100)
+    .attr("cy", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .attr("r", 7)
+    .style("fill", function(d){ return color(d.type)})
+
+// Add one dot in the legend for each name.
+svg.selectAll("mylabels")
+  .data(pairs)
+  .enter()
+  .append("text")
+    .attr("x", 120)
+    .attr("y", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+    .style("fill", function(d){ return color(d.type)})
+    .text(function(d){ return d.typeName})
+    .attr("text-anchor", "left")
+    .style("alignment-baseline", "middle")
 
         simulation.on("tick", () => {
             node.each(d => {
