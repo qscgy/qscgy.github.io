@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mergers and Acquisitions of Defense Contractors</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .link {
+            fill: none;
+            stroke-opacity: 0.6;
+            stroke-width: 1.5px;
+        }
+        .node circle {
+            fill: #69b3a2;
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+        .node text {
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const circleRadius = 30;
+        const types = ['m', 'a', 's', 'so', 'nc'];
+        const color = d3.scaleOrdinal(types, d3.schemeCategory10);
+
+        const data = {
+            nodes: [
+                { id: "North American" },
+                { id: "Rockwell-Standard" },
+                { id: "Rockwell International" },
+                { id: "Rockwell Collins" },
+                { id: "United Technologies" },
+                { id: "RTX" },
+                { id: "Raytheon" },
+                { id: "North American Rockwell" },
+                {id: "Rockwell Automation"},
+                {id: "Boeing"},
+                {id: "Sikorsky"},
+                {id: "Beechcraft"},
+                {id: "Piper"},
+                {id: "Curtiss-Wright"},
+                {id: "Seversky"},
+                {id: "Republic"},
+                {id: "Fairchild"},
+                {id: "Dornier"},
+                {id: "Fairchild Dornier"},
+                {id: "M7 Aerospace"},
+                {id: "Elbit"},
+                {id: "Lockheed"},
+                {id: "Glenn L. Martin Co."},
+                {id: "American-Marietta"},
+                {id: "Martin Marietta"},
+                {id: "Lockheed Martin"},
+                {id: "Northrop"},
+                {id: "Grumman"},
+                {id: "Northrop Grumman"},
+                {id: "Ryan"},
+                {id: "McDonnell"},
+                {id: "Douglas"},
+                {id: "McDonnell Douglas"},
+                {id: "Consolidated"},
+                {id: "Vultee"},
+                {id: "Convair"},
+                {id: "General Dynamics"},
+                {id: "Cessna"},
+                {id: "Textron"},
+                {id: "Bell"},
+                {id: "Vickers"},
+                {id: "Vickers-Armstrongs"},
+                {id: "Armstrong Whitworth"},
+                {id: "Canadian Vickers"},
+                {id: "Canadair"},
+                {id: "Electric Boat"},
+                {id: "British Aircraft Co."},
+                {id: "English Electric"},
+                {id: "Bristol"},
+                {id: "Avro"},
+                {id: "Hawker Siddeley"},
+                {id: "British Aerospace"},
+                {id: "General Electric"},
+                {id: "BAE Systems"},
+                {id: "Marconi"},
+                {id: "Ling-Temco"},
+                {id: "Vought"},
+                {id: "Ling-Temco-Vought"},
+                {id: "Carlyle Group"},
+                {id: "Fairey"},
+                {id: "Westland"},
+                {id: "Saunders-Roe"},
+                {id: "Agusta"},
+                {id: "AgustaWestland"},
+                {id: "Leonardo"},
+                {id: "Supermarine"},
+                {id: "Blackburn"},
+                {id: "de Havilland"},
+                {id: "Bombardier"},
+                {id: "Short Brothers"},
+                {id: "Percival"},
+                {id: "Hunting"},
+                {id: "Sud-Est"},
+                {id: "Sud-Ouest"},
+                {id: "Sud Aviation"},
+                {id: "Aérospatiale"},
+                {id: "Nord Aviation"},
+                {id: "Aérospatiale Helicopters"},
+                {id: "DASA"},
+                {id: "DASA Helicopters"},
+                {id: "Eurocopter"},
+                {id: "Airbus"},
+                {id: "EADS"},
+                {id: "Messerschmitt-Bölkow-Blohm"},
+                {id: "CASA"},
+                {id: "Focke-Wulf"},
+                {id: "Weserflug"},
+                {id: "VFW"},
+                {id: "Dewoitine"},
+                {id: "Fiat Aviazione"},
+                {id: "Alenia Aeronautica"},
+                {id: "Aerfer"},
+                {id: "Aeritalia"},
+                {id: "Aermacchi"},
+                {id: "Junkers"},
+                {id: "Heinkel"},
+                {id: "PZL"},
+                {id: "Piaggio"},
+                {id: "Baykar"},
+                {id: "Bloch"},
+                {id: "Dassault"},
+                {id: "Breguet"}
+            ],
+            links: [
+                { source: "North American", target: "North American Rockwell", type:'m' },  // merger
+                { source: "Rockwell-Standard", target: "North American Rockwell", type: 'm' },
+                { source: "North American Rockwell", target: "Rockwell International", type:'nc' }, // name change
+                { source: "Rockwell International", target: "Rockwell Collins", type: "so" },   // spun off
+                { source: "Rockwell International", target: "Rockwell Automation", type: "so"},
+                { source: "Rockwell Collins", target: "United Technologies", type: "a"},    // acquisition
+                { source: "United Technologies", target: "RTX", type: "m"},
+                { source: "Raytheon", target: "RTX", type: "m"},
+                {source: "Rockwell International", target: "Boeing", type: "s", label: "Aircraft division"},    // sold (a division)
+                {source: "Sikorsky", target: "United Technologies", type: 'a'},
+                {source: "Beechcraft", target: "Raytheon", type: "a"},
+                {source: "Seversky", target: "Republic", type: "nc"},
+                {source: "Republic", target: "Fairchild", type: "a"},
+                {source: "Fairchild", target: "Fairchild Dornier", type: "m"},
+                {source: "Fairchild Dornier", target: "M7 Aerospace", type: "a"},
+                {source: "M7 Aerospace", target: "Elbit", type: "a"},
+                {source: "Dornier", target: "Fairchild Dornier", type: "m"},
+                {source: "Glenn L. Martin Co.", target: "Martin Marietta", type: "m"},
+                {source: "American-Marietta", target: "Martin Marietta", type: "m"},
+                {source: "Lockheed", target: "Lockheed Martin", type: "m"},
+                {source: "Martin Marietta", target: "Lockheed Martin", type: "m"},
+                {source: "Northrop", target: "Northrop Grumman", type: "m"},
+                {source: "Grumman", target: "Northrop Grumman", type: "m"},
+                {source: "Ryan", target: "Northrop Grumman", type: "a"},
+                {source: "McDonnell", target: "McDonnell Douglas", type: "m"},
+                {source: "Douglas", target: "McDonnell Douglas", type: "m"},
+                {source: "McDonnell Douglas", target: "Boeing", type: "a"},
+                {source: "Consolidated", target: "Convair", type: "m"},
+                {source: "Vultee", target: "Convair", type: "m"},
+                {source: "Convair", target: "General Dynamics", type: "a"},
+                {source: "General Dynamics", target: "McDonnell Douglas", type: "s", label: "Convair"},
+                {source: "Cessna", target: "General Dynamics", type: "a"},
+                {source: "General Dynamics", target: "Textron", type: "s", label: "Cessna"},
+                {source: "Bell", target: "Textron", type: "a"},
+                {source: "Vickers", target: "Canadian Vickers", type: "so"},
+                {source: "Canadian Vickers", target: "Canadair", type: "nc"},
+                {source: "Canadair", target: "General Dynamics", type: "m"},
+                {source: "Electric Boat", target: "General Dynamics", type: "m"},
+                {source: "Vickers", target: "Vickers-Armstrongs", type: "m"},
+                {source: "Armstrong Whitworth", target: "Vickers-Armstrongs", type: "m"},
+                {source: "Vickers-Armstrongs", target: "British Aircraft Co.", type: "m"},
+                {source: "English Electric", target: "British Aircraft Co.", type: "m"},
+                {source: "Bristol", target: "British Aircraft Co.", type: "m"},
+                {source: "Avro", target: "Hawker Siddeley", type: "a"},
+                {source: "Hawker Siddeley", target: "British Aerospace", type: "m"},
+                {source: "British Aircraft Co.", target: "British Aerospace", type: "m"},
+                {source: "British Aerospace", target: "Raytheon", type: "s", label: "BAe Corporate Jets"},
+                {source: "General Electric", target: "Marconi", type: 'so'},
+                {source: "Marconi", target: "BAE Systems", type: "m"},
+                {source: "British Aerospace", target: "BAE Systems", type: "m"},
+                {source: "Vought", target: "Ling-Temco-Vought", type: "m"},
+                {source: "Ling-Temco", target: "Ling-Temco-Vought", type: "m"},
+                {source: "Ling-Temco-Vought", target: "Carlyle Group", type: "a"},
+                {source: "Fairey", target: "Westland", type: "a"},
+                {source: "Saunders-Roe", target: "Westland", type: "a"},
+                {source: "Bristol", target: "Westland", type: "s", label: "Helicopter divisions"},
+                {source: "Agusta", target: "AgustaWestland", type: "m"},
+                {source: "Westland", target: "AgustaWestland", type: "m"},
+                {source: "AgustaWestland", target: "Leonardo", type: "a"},
+                {source: "Supermarine", target: "Vickers-Armstrongs", type: "a"},
+                {source: "Blackburn", target: "Hawker Siddeley", type: "a"},
+                {source: "de Havilland", target: "Hawker Siddeley", type: "a"},
+                {source: "Short Brothers", target: "Bombardier", type: "a"},
+                {source: "Percival", target: "Hunting", type: 'nc'},
+                {source: "Hunting", target: "British Aircraft Co.", type: "m"},
+                {source: "United Technologies", target: "Lockheed Martin", type:'s', label: "Sikorsky"},
+                {source: "Sud-Est", target: "Sud Aviation", type: "m"},
+                {source: "Sud-Ouest", target: "Sud Aviation", type: "m"},
+                {source: "Sud Aviation", target: "Aérospatiale", type: "m"},
+                {source: "Nord Aviation", target: "Aérospatiale", type: "m"},
+                {source: "Aérospatiale", target: "Aérospatiale Helicopters", type: "so"},
+                {source: "DASA", target: "DASA Helicopters", type: "so"},
+                {source: "Aérospatiale Helicopters", target: "Eurocopter", type: "m"},
+                {source: "DASA Helicopters", target: "Eurocopter", type: "m"},
+                {source: "Eurocopter", target: "EADS", type: "a"},
+                {source: "Aérospatiale", target: "EADS", type: "m"},
+                {source: "DASA", target: "EADS", type: "m"},
+                {source: "EADS", target: "Airbus", type: "nc"},
+                {source: "CASA", target: "EADS", type: "a"},
+                {source: "Messerschmitt-Bölkow-Blohm", target: "DASA", type: "a"},
+                {source: "Focke-Wulf", target: "VFW", type: "m"},
+                {source: "Weserflug", target: "VFW", type: "m"},
+                {source: "VFW", target: "Messerschmitt-Bölkow-Blohm", type: "a"},
+                {source: "Dewoitine", target: "Sud-Est", type: "a"},
+                {source: "Fiat Aviazione", target: "Aeritalia", type: "m"},
+                {source: "Aerfer", target: "Aeritalia", type: "m"},
+                {source: "Aeritalia", target: "Alenia Aeronautica", type:"m"},
+                {source: "Alenia Aeronautica", target: "Leonardo", type: "a"},
+                {source: "Aermacchi", target: "Leonardo", type: "a"},
+                {source: "Junkers", target: "Messerschmitt-Bölkow-Blohm", type: "a"},
+                {source: "Heinkel", target: "VFW", type: "a"},
+                {source: "PZL", target: "Sikorsky", type: "a"},
+                {source: "Piaggio", target: "Baykar", type: "a"},
+                {source: "Bloch", target: "Dassault", type: "nc"},
+                {source: "Breguet", target: "Dassault", type: "a"}
+            ]
+        };
+
+        const width = 3600;
+        const height = 3600;
+
+        // Reheat the simulation when drag starts, and fix the subject position.
+        const dragstarted = (event) => {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        };
+
+        // Update the subject (dragged node) position during drag.
+        const dragged = (event) => {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        };
+
+        // Restore the target alpha so the simulation cools after dragging ends.
+        // Unfix the subject position now that it’s no longer being dragged.
+        const dragended = (event) => {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        };
+
+        const svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const simulation = d3.forceSimulation(data.nodes)
+            .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-230))
+            .force("collide", d3.forceCollide().radius(circleRadius+1).iterations(3))
+            .force("center", d3.forceCenter(width / 2, height / 2));
+        
+        svg.append("defs").selectAll("marker")
+            .data(types)
+            .join("marker")
+            .attr("id", d => `arrow-${d}`)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", circleRadius+12)
+            .attr("refY", 0)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("fill", color)
+            .attr("d", 'M0,-5L10,0L0,5');
+        
+        const link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(data.links)
+            .enter()
+            .append("line")
+            .attr("class", "link")
+            .attr("stroke", d => color(d.type))
+            .attr("marker-end", d => `url(#arrow-${d.type})`);            
+
+        const node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("g")
+            .data(data.nodes)
+            .enter()
+            .append("g")
+            .attr("class", "node");
+
+        node.append("circle")
+            .attr("r", circleRadius);
+
+        node.append("text")
+            .text(d => d.id)
+            .attr("x", 0)
+            .attr("y", 3)
+            .attr("text-anchor", "middle");
+
+        node.call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+        simulation.on("tick", () => {
+            node.each(d => {
+            d.x = Math.max(circleRadius, Math.min(width - circleRadius, d.x)); 
+            d.y = Math.max(circleRadius, Math.min(height - circleRadius, d.y));
+            });
+            node.attr("cx", d => d.x).attr("cy", d => d.y);
+            
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+    </script>
+</body>
+</html>
