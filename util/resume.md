@@ -4,15 +4,15 @@
 
 ## Interests
 AI + Health, Medical Imaging, 3D Computer Vision, Computational
-Geometry, Machine Learning, Neural Rendering, Generative Models
+Geometry, Machine Learning, Motion Planning, Real-Time Vision
 
 ## Education
 ### Ph.D. in Computer Science — Aug 2021-present
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
-### M.S. in Computer Science — Aug 2021-May 2023
-#### University of North Carolina at Chapel Hill, Chapel Hill, NC
+### M.Sc. in Computer Science — Aug 2021-May 2023
+#### University of North Carolina at Chapel Hill – Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
 ### B.A. in Physics and Computer Science — Aug 2017-May 2021
@@ -21,6 +21,20 @@ Specialization: Internet of Things + Medical Image Synthesis
 &nbsp;
 
 ## Experience
+
+### COMP 116 Instructor – August 2025-Present
+#### University of North Carolina at Chapel Hill — Chapel Hill, NC
+- Taught scientific programming to a class of 112 non-CS majors as the instructor of record.
+- Developed a syllabus and lesson plans tailored to the needs of students in life sciences, statistics, and economics.
+- Managed a team of 6 TAs to ensure consistent availability of support to students.
+
+### Planning Engineer Intern – May 2025-Aug 2025
+#### Kodiak Robotics – Mountain View, CA
+Supervisor: Roya Sabbagh Novin
+- Implemented an advanced approach to motion planning that enabled a self-driving truck to detect and pull over for overtaking traffic on unpaved roads.
+- Increased lateral clearance when pulled over by an average of 0.6 meters, thus contributing to a safer product.
+- Performed extensive unit testing and simulation on a large-scale codebase, ensuring code reliability and robustness.
+
 ### Graduate Research Assistant — Aug 2021-Present
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 Advisor: Stephen M. Pizer
@@ -33,24 +47,14 @@ of the art by 30 percentage points on overall accuracy. Optimized this approach 
 - Used Qt and VTK to continue development of an interactive post‑processing tool for 3D reconstructions.
 - Performed extensive testing and debugging on a shared codebase.
 
-### Undergraduate Research Assistant — Apr 2020-Aug 2021
-#### Case Western Reserve University — Cleveland, OH
-Advisor: Mahdi Bayat
-
-- Developed a novel method, employing deep learning and numerical image processing, to produce images of blood vessels under 1 mm diameter from ultrasound scans without the need for injected contrast agents.
-- Introduced a novel method for fast low‑rank approximation of spatiotemporal data in applications where speed is prioritized over accuracy.
-Demonstrated superior performance to comparable, previously‑published methods.
-- Used MATLAB to implement a blood‑vessel simulator to simulate ultrasound scans of a shear‑thinning fluid flowing through winding, narrow blood vessels.
-
 ## Skills
 **Design:** User interface design, Information visualization, Solidworks,
 Fusion 360, Canva, Illustrator
 
-**Programming:** Python (NumPy, SciPy, PyTorch, Pytorch3D, OpenCV, Altair,
+**Programming:** Python (NumPy, SciPy, Pandas, Matplotlib, PyTorch, Pytorch3D, OpenCV, Altair,
 Open3D), Java, C++, MATLAB (Deep Learning Toolbox), Bash, SQL
 
-**Hardware:** Soldering, Oscilloscope, Logic analyzer, Spectrum analyzer, 3D
-printer, Laser and waterjet cutter, CNC mill
+**Testing/Simulation:** GoogleTest, Applied Intuition Object Sim (formerly Simian), Elastic Kibana
 
 ## Graduate Coursework
 3D Generative Models, Bioinformatics, Computational Perception,
@@ -59,6 +63,7 @@ Visualization, Machine Learning, Neural Rendering, Object Statistics,
 Shape Representation and Statistics, Vision Transformers
 
 ## Projects
+
 ### Shape Viewer — 2024-present
 #### Tool for visualizing the geometric properties of 3D shapes
 
@@ -72,12 +77,6 @@ availabe to visualize surface properties important in differential geometry.
     - a library of example shape plots highlighting key concepts in differential geometry
 * The code is available at [https://github.com/qscgy/shape-viewer](https://github.com/qscgy/shape-viewer).
 
-### ClubRM — 2023-present
-#### Customer Relations Management for youth organizations
-
-* Implemented from scratch a Customer Relations Management system tailored to youth organizations.
-* Wrote a suite of Node.js code that interfaces between several services, facilitating the sharing of knowledge related to organizational activities as well as communication with internal and external audiences.
-
 ## Outreach & Academic Service
 ### UNC Computer Science Student Association — 2022-present
 #### President — 2023‑2024
@@ -87,10 +86,16 @@ availabe to visualize surface properties important in differential geometry.
 - Advocated for the views and interests of students during the faculty hiring process as a voting member of the departmental faculty senate.
 - Successfully advocated for a cost‑of‑living increase to graduate student stipends.
 
+### FIRST Robotics Competition Team 449
+#### Mentor – 2017-2024
+- Taught high school students fundamental skills in mechanical engineering, programming, and system design, leading to 3 world championship appearances in the 5 full competition seasons during this time period.
+
 ## Publications & Patents
+**Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (In review, 2025). Geometric and Photometric Features for Navigation in Colonoscopy.
+
 Paruchuri, A., **Ehrenstein, S.**, Wang, S., Fried, I., Pizer, S.M.,
 Niethammer, M., and Sengupta, R. (2024). Leveraging Near-Field Lighting
-for Monocular Depth Estimation from Endoscopy Videos. Under review.
+for Monocular Depth Estimation from Endoscopy Videos. European Conference on Computer Vision 2024. Milan, Italy.
 *arXiv:2403.17915*.
 
 **S. Ehrenstein**, S.M. Pizer, S. Sengupta, S. Wang, Y. Zhang, J.-M. Frahm (2024).

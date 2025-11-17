@@ -22,8 +22,8 @@ run_command(['pandoc', input_file, '-o', output_file, '--pdf-engine', 'weasyprin
 run_command(['pandoc', input_file, '-o', html_file, '-t', 'html5',
             '--css', css_file])
 
-run_command(['pandoc', input_file, '-o', html_file, '-t', 'docx',
-            '--css', word_file])
+run_command(['pandoc', input_file, '-o', word_file, '-t', 'docx',
+            '--css', css_file])
 
 with open(html_file) as f:
     lines = f.readlines()
