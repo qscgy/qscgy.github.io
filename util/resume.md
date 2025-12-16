@@ -91,14 +91,15 @@ availabe to visualize surface properties important in differential geometry.
 - Taught high school students fundamental skills in mechanical engineering, programming, and system design, leading to 3 world championship appearances in the 5 full competition seasons during this time period.
 
 ## Publications & Patents
+Ahmad, A., **Ehrenstein, S.**, Thomas, I., and Oudeh, N. (In review, 2025). RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs.
+
 **Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (In review, 2025). Geometric and Photometric Features for Navigation in Colonoscopy.
 
 Paruchuri, A., **Ehrenstein, S.**, Wang, S., Fried, I., Pizer, S.M.,
-Niethammer, M., and Sengupta, R. (2024). Leveraging Near-Field Lighting
-for Monocular Depth Estimation from Endoscopy Videos. European Conference on Computer Vision 2024. Milan, Italy.
+Niethammer, M., and Sengupta, R. (2024). Leveraging Near-Field Lighting for Monocular Depth Estimation from Endoscopy Videos. European Conference on Computer Vision 2024. Milan, Italy.
 *arXiv:2403.17915*.
 
-**S. Ehrenstein**, S.M. Pizer, S. Sengupta, S. Wang, Y. Zhang, J.-M. Frahm (2024).
+**Ehrenstein, S.**, Pizer, S.M., Sengupta, R., Wang, S., Zhang, Y., Frahm, J.-M. (2024).
 Methods, Systems, and Computer Readable Media for Colonoscopic Blind Spot Detection
 PCT/US2024/018732. Patent pending.
 
