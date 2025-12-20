@@ -30,8 +30,8 @@ Specialization: Internet of Things + Medical Image Synthesis
 
 ### Planning Engineer Intern – May 2025-Aug 2025
 #### Kodiak Robotics – Mountain View, CA
-Supervisor: Roya Sabbagh Novin
-- Implemented an advanced approach to motion planning that enabled a self-driving truck to detect and pull over for overtaking traffic on unpaved roads.
+- Supervisor: Roya Sabbagh Novin
+- Implemented a physics-based approach to motion planning that enabled a self-driving truck to detect and pull over for overtaking traffic on unpaved roads.
 - Increased lateral clearance when pulled over by an average of 0.6 meters, thus contributing to a safer product.
 - Performed extensive unit testing and simulation on a large-scale codebase, ensuring code reliability and robustness.
 
