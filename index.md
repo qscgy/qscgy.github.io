@@ -4,7 +4,7 @@ author_profile: true
 ---
 In July 2026, I will be starting a postdoc in the Department of Radiology at the University of Wisconin–Madison, where my research will focus on using shape analysis to improve aortic CT imaging.
 
-I earned my Ph.D. in computer science in April 2036 from the University of North Carolina at Chapel Hill, advised by Prof. Stephen Pizer (<a href="http://midag.cs.unc.edu">lab website</a>). I earned my M.S. in computer science in 2023 from the same. Previously, I graduated in 2021 from Case Western Reserve University with a B.A. in physics and computer science, and from the Montgomery Blair High School Magnet in 2017.
+I earned my Ph.D. in computer science in April 2026 from the University of North Carolina at Chapel Hill, advised by Prof. Stephen Pizer (<a href="http://midag.cs.unc.edu">lab website</a>). I earned my M.S. in computer science in 2023 from the same. Previously, I graduated in 2021 from Case Western Reserve University with a B.A. in physics and computer science, and from the Montgomery Blair High School Magnet in 2017.
 
 Away from academics, you can find me hiking in the forest somewhere, tinkering with my 3D printer, or in the kitchen cooking up a pot of chili.
 
