@@ -7,11 +7,11 @@ AI + Health, Medical Imaging, 3D Computer Vision, Computational
 Geometry, Machine Learning, Motion Planning, Real-Time Vision
 
 ## Education
-### Ph.D. in Computer Science — Aug 2021-present
+### Ph.D. in Computer Science — Aug 2021-Apr 2026
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
-### M.Sc. in Computer Science — Aug 2021-May 2023
+### M.S. in Computer Science — Aug 2021-May 2023
 #### University of North Carolina at Chapel Hill – Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
@@ -21,6 +21,11 @@ Specialization: Internet of Things + Medical Image Synthesis
 &nbsp;
 
 ## Experience
+
+### Postdoctoral Research Associate
+#### University of Wisconsin–Madison — Madison, WI
+- AAI-CTR Group, Principal Investigator: Nicholas Burris
+- Employed anatomical shape analysis and computational geometry to facilitate improved diagnosis and treatment of aortic disease.
 
 ### COMP 116 Instructor – August 2025-Present
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
@@ -91,9 +96,11 @@ availabe to visualize surface properties important in differential geometry.
 - Taught high school students fundamental skills in mechanical engineering, programming, and system design, leading to 3 world championship appearances in the 5 full competition seasons during this time period.
 
 ## Publications & Patents
-Ahmad, A., **Ehrenstein, S.**, Thomas, I., and Oudeh, N. (In review, 2025). RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs.
+**Ehrenstein, S.** (In review, 2026). Virtual Tagging: Software-based Navigation to Marked Locations in Colonoscopy.
 
-**Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (In review, 2025). Geometric and Photometric Features for Navigation in Colonoscopy.
+**Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (In review, 2026). Medial Skeletons for Haustral Fold Detection in Colonoscopy.
+
+Ahmad, A., **Ehrenstein, S.**, Thomas, I., and Oudeh, N. (2026). RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs.International Conference on Healthcare Informatics. Minneapolis, MN.
 
 Paruchuri, A., **Ehrenstein, S.**, Wang, S., Fried, I., Pizer, S.M.,
 Niethammer, M., and Sengupta, R. (2024). Leveraging Near-Field Lighting for Monocular Depth Estimation from Endoscopy Videos. European Conference on Computer Vision 2024. Milan, Italy.

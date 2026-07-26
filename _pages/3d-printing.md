@@ -7,9 +7,7 @@ _August-November 2025_
 <figure class="single">
 <a href="/assets/images/B24F313C-439C-44F8-B0D9-BBF06650DB9E_1_105_c.jpeg">
 <img src="/assets/images/B24F313C-439C-44F8-B0D9-BBF06650DB9E_1_105_c.jpeg" alt=""></a>
-This is my second 3D printed US topo map. Unlike the first one, where I printed each state individually
-from a set of freely available designs, this was printed as 20 separate tiles that I created in QGIS. I
-then glued the tiles to the front of a poster frame, providing a sturdier piece than the first version.
+This is my second 3D printed US topo map. Unlike the first one (below), where I printed each state individually from a set of freely available designs, this was printed as 20 separate tiles that I created in QGIS. I then glued the tiles to the front of a poster frame, creating a sturdier piece than the first version.
 </figure>
 
 ## Mini topo maps
@@ -39,3 +37,7 @@ _December 2025-present_
   I have started printing lithophanes of the road networks of cities.
 </figure>
 
+## 3D Printed Topographic Map of Contiguous US
+_March-October 2021_
+![A 3D printed topographical map of the United States, in blue plastic.](/assets/images/IMG_4153.jpg)
+This took several months, printing each state individually with a lot of time spent dialing in print settings. Done in PLA with 0.2 mm layer height.

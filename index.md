@@ -2,9 +2,9 @@
 layout: home
 author_profile: true
 ---
-In July 2026, I will be starting a postdoc in the Department of Radiology at the University of Wisconin–Madison, where my research will focus on using shape analysis to improve aortic CT imaging.
+I am currently a postodctoral researcher in the <a href="https://advanced.aorticimaging.radiology.wisc.edu/">Advanced Aortic Imaging for Clinical and Translational Research</a> group of the Department of Radiology at the University of Wisconin–Madison. My research is focused on applying shape analysis and computational geometry to the treatment of aortic disease.
 
-I earned my Ph.D. in computer science in April 2026 from the University of North Carolina at Chapel Hill, advised by Prof. Stephen Pizer (<a href="http://midag.cs.unc.edu">lab website</a>). I earned my M.S. in computer science in 2023 from the same. Previously, I graduated in 2021 from Case Western Reserve University with a B.A. in physics and computer science, and from the Montgomery Blair High School Magnet in 2017.
+I earned my Ph.D. in computer science in April 2026 from the University of North Carolina at Chapel Hill, advised by Prof. Stephen Pizer (<a href="http://midag.cs.unc.edu">lab website</a>). I earned my M.S. in computer science in 2023, also from UNC. Previously, I graduated in 2021 from Case Western Reserve University with a B.A. in physics and computer science, and before that from the Montgomery Blair High School Magnet in 2017.
 
 Away from academics, you can find me hiking in the forest somewhere, tinkering with my 3D printer, or in the kitchen cooking up a pot of chili.
 
@@ -14,7 +14,7 @@ Away from academics, you can find me hiking in the forest somewhere, tinkering w
 <div class="paper-description">
 <b>Leveraging Near-Field Lighting for Monocular Depth Estimation from Endoscopy Videos</b><br/>
 Akshay Paruchuri, <b>Samuel Ehrenstein</b>, Sherry Wang, Inbar Fried, Stephen M. Pizer, Marc Niethammer, Roni Sengupta<br/>
-Accepted to <b>European Conference on Computer Vision, 2024.</b><br/>
+<b>European Conference on Computer Vision, 2024.</b><br/>
 [<a href="https://arxiv.org/pdf/2403.17915.pdf">PDF</a>][<a href="https://ppsnet.github.io/">Project Page</a>][<a href="https://github.com/Roni-Lab/PPSNet">Code</a>]
 <p>
 <i>We utilize Per-Pixel Shading (PPS) to model light reflected from surfaces in endoscopy. Using novel PPS-based, self-supervised loss functions in a teacher-student approach, and building on a pretrained DPT-Hybrid ViT model, we achieve state-of-the-art results on a variety of simulated and in-vivo clinical datasets.</i>
