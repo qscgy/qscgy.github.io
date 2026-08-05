@@ -18,7 +18,6 @@ Advisor: Stephen M. Pizer
 ### B.A. in Physics and Computer Science — Aug 2017-May 2021
 #### Case Western Reserve University — Cleveland, OH
 Specialization: Internet of Things + Medical Image Synthesis
-&nbsp;
 
 ## Experience
 
@@ -85,8 +84,7 @@ availabe to visualize surface properties important in differential geometry.
 ## Outreach & Academic Service
 ### UNC Computer Science Student Association — 2022-present
 #### President — 2023‑2024
-- Budgeted university funds and coordinated with caterers and facilities services to host biweekly tea times, 4 offsite dinners and 4 lunches for
-60 people each, and one family‑friendly evening social for 100 people.
+- Budgeted university funds and coordinated with caterers and facilities services to host biweekly tea times, 4 offsite dinners and 4 lunches for 60 people each, and one family‑friendly evening social for 100 people.
 - In spring 2024, held 150% more department social events than in any of the previous four semesters.
 - Advocated for the views and interests of students during the faculty hiring process as a voting member of the departmental faculty senate.
 - Successfully advocated for a cost‑of‑living increase to graduate student stipends.

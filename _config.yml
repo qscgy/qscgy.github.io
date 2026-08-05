@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Sam Ehrenstein"
   avatar : "/assets/images/86B0712A-1C90-41A6-86BA-1EA8C4F54A60_1_201_a.jpeg"
-  bio    : "Graduating Ph.D. in computer science at UNC-Chapel Hill. Interested in applications of computer vision and computational geometry, particularly in medicine."
+  bio    : "Postdoc in aortic imaging at the University of Wisconsin–Madison. Interested in applications of computer vision and computational geometry, particularly in medicine."
   location: "Carrboro, NC"
   links:
     - label: "GitHub"
