@@ -21,12 +21,12 @@ Specialization: Internet of Things + Medical Image Synthesis
 
 ## Experience
 
-### Postdoctoral Research Associate
+### Postdoctoral Research Associate — Aug 2026-present
 #### University of Wisconsin–Madison — Madison, WI
 - AAI-CTR Group, Principal Investigator: Nicholas Burris
 - Employed anatomical shape analysis and computational geometry to facilitate improved diagnosis and treatment of aortic disease.
 
-### COMP 116 Instructor – August 2025-Present
+### COMP 116 Instructor – Aug 2025-Dec 2025
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 - Taught scientific programming to a class of 112 non-CS majors as the instructor of record.
 - Developed a syllabus and lesson plans tailored to the needs of students in life sciences, statistics, and economics.
@@ -39,7 +39,7 @@ Specialization: Internet of Things + Medical Image Synthesis
 - Increased lateral clearance when pulled over by an average of 0.6 meters, thus contributing to a safer product.
 - Performed extensive unit testing and simulation on a large-scale codebase, ensuring code reliability and robustness.
 
-### Graduate Research Assistant — Aug 2021-Present
+### Graduate Research Assistant — Aug 2021-May 2026
 #### University of North Carolina at Chapel Hill — Chapel Hill, NC
 Advisor: Stephen M. Pizer
 
@@ -94,9 +94,9 @@ availabe to visualize surface properties important in differential geometry.
 - Taught high school students fundamental skills in mechanical engineering, programming, and system design, leading to 3 world championship appearances in the 5 full competition seasons during this time period.
 
 ## Publications & Patents
-**Ehrenstein, S.** (In review, 2026). Virtual Tagging: Software-based Navigation to Marked Locations in Colonoscopy.
+**Ehrenstein, S.** (in press). Virtual Tagging: Software-based Navigation to Marked Locations in Colonoscopy. MICCAI Doctoral Symposium 2026.
 
-**Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (In review, 2026). Medial Skeletons for Haustral Fold Detection in Colonoscopy.
+**Ehrenstein, S.**, McGill, S., Rosenman, J., and Pizer, S. (in press). Medial Skeletons for Haustral Fold Detection in Colonoscopy. Workshop on Shape in Medical Imaging at MICCAI 2026. 
 
 Ahmad, A., **Ehrenstein, S.**, Thomas, I., and Oudeh, N. (2026). RePurposeX: Designing Mixed-Initiative Decision Support for Drug Repurposing with Biomedical Knowledge Graphs.International Conference on Healthcare Informatics. Minneapolis, MN.
 
